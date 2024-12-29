@@ -19,6 +19,9 @@ public class Chart implements Serializable {
     @TableId(type = IdType.AUTO)
     private Long id;
 
+
+    private String chartName;
+
     /**
      * 分析目标
      */
@@ -37,7 +40,7 @@ public class Chart implements Serializable {
     /**
      * 生成的图表数据
      */
-    private String genchart;
+    private String genChart;
 
     /**
      * 生成的分析结论

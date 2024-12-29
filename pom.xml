@@ -51,6 +51,25 @@
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
+
+<!--        接入豆包-->
+        <dependency>
+            <groupId>com.volcengine</groupId>
+            <artifactId>volcengine-java-sdk-ark-runtime</artifactId>
+            <version>LATEST</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.volcengine</groupId>
+            <artifactId>volcengine-java-sdk-vpc</artifactId>
+            <version>0.1.134</version>
+        </dependency>
+        <dependency>
+            <groupId>com.volcengine</groupId>
+            <artifactId>volcengine-java-sdk-ecs</artifactId>
+            <version>0.1.134</version>
+        </dependency>
+
         <!-- elasticsearch-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
