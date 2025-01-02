@@ -1,10 +1,12 @@
 package com.csj.BIProject.model.dto.chart;
 
 import com.csj.BIProject.common.PageRequest;
+import com.fasterxml.jackson.annotation.JsonCreator;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -16,49 +18,20 @@ import java.util.List;
 public class ChartQueryRequest extends PageRequest implements Serializable {
 
     /**
-     * id
+     * chart的名字
      */
-    private Long id;
+    private String chartName;
 
     /**
-     * id
+     * 分析目标
      */
-    private Long notId;
+    private String goal;
 
     /**
-     * 搜索词
+     * 图表类型
      */
-    private String searchText;
+    private String chartType;
 
-    /**
-     * 标题
-     */
-    private String title;
-
-    /**
-     * 内容
-     */
-    private String content;
-
-    /**
-     * 标签列表
-     */
-    private List<String> tags;
-
-    /**
-     * 至少有一个标签
-     */
-    private List<String> orTags;
-
-    /**
-     * 创建用户 id
-     */
-    private Long userId;
-
-    /**
-     * 收藏用户 id
-     */
-    private Long favourUserId;
 
     private static final long serialVersionUID = 1L;
 }

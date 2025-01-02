@@ -6,6 +6,7 @@
 
     <resultMap id="BaseResultMap" type="com.csj.BIProject.model.entity.User">
             <id property="id" column="id" jdbcType="BIGINT"/>
+            <id property="useCount" column="useCount" jdbcType="INTEGER"/>
             <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>
             <result property="userPassword" column="userPassword" jdbcType="VARCHAR"/>
             <result property="userName" column="userName" jdbcType="VARCHAR"/>
@@ -17,7 +18,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,userAccount,userPassword,
+        id,useCount,userAccount,userPassword,
         userName,userAvatar,userRole,
         createTime,updateTime,isDelete
     </sql>

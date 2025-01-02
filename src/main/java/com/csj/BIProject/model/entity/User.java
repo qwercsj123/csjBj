@@ -7,6 +7,8 @@ import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.util.Date;
+
+import io.swagger.models.auth.In;
 import lombok.Data;
 
 /**
@@ -55,6 +57,12 @@ public class User implements Serializable {
      * 更新时间
      */
     private Date updateTime;
+
+
+    /**
+     * 当天使用系统的次数
+     */
+    private Integer  useCount;
 
     /**
      * 是否删除
