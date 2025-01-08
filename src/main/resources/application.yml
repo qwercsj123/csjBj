@@ -20,8 +20,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/bj
-    username: root
-    password: chenshijie123
+    username:
+    password:
   # Redis 配置
   # todo 需替换配置，然后取消注释
 #  redis:
@@ -41,6 +41,9 @@ spring:
     multipart:
       # 大小限制
       max-file-size: 10MB
+  rabbitmq:
+    addresses: localhost
+    port: 5672
 server:
   address: 0.0.0.0
   port: 8080

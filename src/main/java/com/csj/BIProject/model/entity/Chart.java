@@ -52,6 +52,24 @@ public class Chart implements Serializable {
      */
     private Long userId;
 
+
+    /**
+     * ai执行的状态
+     * 0 代表 成功
+     * 1 代表 执行中
+     * 2 代表 等待中
+     * 3 代表  失败
+     */
+    private Integer status;
+
+
+
+
+    /**
+     * ai执行的信息
+     */
+    private String  executeMessage;
+
     /**
      * 创建时间
      */

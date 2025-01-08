@@ -19,7 +19,7 @@ public class DouBaoUtils {
 
 
         StrBuilder strBuilder = new StrBuilder();
-        String apiKey = "3b649479-251c-49c8-9857-2a5e86e6f27b";
+        String apiKey = "";
         ArkService service = ArkService.builder().apiKey(apiKey).build();
 
         System.out.println("\n----- standard request -----");
@@ -41,7 +41,7 @@ public class DouBaoUtils {
         messages.add(userMessage);
 
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest.builder()
-                .model("ep-20241227202642-fkfs2")
+                .model("")
                 .messages(messages)
                 .build();
 

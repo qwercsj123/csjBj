@@ -21,4 +21,8 @@ public class QueryChartResponse {
 
     private String  genResult; //ai分析之后的结论
 
+    private Integer  status;
+
+    private String   executeMessage;
+
 }
